@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mountain hill restaurants - Home Page</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                color: #f0f0f0;
+                
+            }
+            .bgImg{
+                width: 100%;
+                height: 100vh; 
+                background-repeat: no-repeat;
+                background: url("cafe_design-694033.jpg");
+                background-blend-mode: lighten;
+            }
+            .navbar{
+                width: 100%;
+                height: 60px;
+                background-color: rgb(66, 2, 11);
+                color: #0f0f0f;
+            }
+            ul{
+                list-style: none;
+                float: right;
+                margin: 0px 20px;
+                padding: 20px;
+            }
+            ul li{
+                display: inline;
+                font-size: 20px;
+                margin: 0px 10px;
+                font-weight: 600;
+            }
+
+            a{
+                text-decoration: none;
+                color: #f0f0f0;
+            }
+
+            input[type="submit"]{
+                border-radius: 20px;
+                padding: 7px 15px;
+                color: #b9690e;
+                font-size: 18px;
+                background: f0f0f0;
+            }
+            .banner{
+                width: 100%;
+                height: 60vh;
+                background-image: url("rstBanner.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .about h2, .product h2{
+                color: #0f0f0f;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            .about p{
+                width: 70%;
+                color: #0f0f0f;
+                font-size: 18px;
+                font-style: italic;
+                margin: auto;
+            }
+
+            .videoSec{
+                margin: 50px 0px;
+                text-align: center;
+                background-color: rgb(155, 6, 6);
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .videoSec iframe{
+                box-shadow: 0 0 20px #270007;
+                margin: 20px;
+            }
+            .AudioSec{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="survey.html">Survey Form</a></li>
+                </ul>
+            </div>
+            <div class="banner"></div>
+            <div class="about">
+                <h2>About & Services</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <div class="videoSec">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/Bvm-5vLc49k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="AudioSec">
+                        <audio controls autoplay>
+                            <source src="2016-11-14_-_Adam_Contest_-_David_Fesliyan.mp3" type="audio/mp3">
+                          </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <h2> Special Item </h2>
+                <div class="productList">
+                    <div class="listItem">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
+
+<script>
+    document.getElementById('audio').play
+</script>

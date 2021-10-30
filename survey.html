@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mountain hill restaurants - Survey Form</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                color: #f0f0f0;
+                
+            }
+            .bgImg{
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background: linear-gradient(rgba(17, 32, 233, 0.7),rgba(68, 9, 146, 0.7)),url("colorful_interiors.jpg");
+            }
+            .navbar{
+                width: 100%;
+                height: 60px;
+                background-color: rgb(194, 159, 3);
+                color: #0f0f0f;
+            }
+            ul{
+                list-style: none;
+                float: right;
+                margin: 0px 20px;
+                padding: 20px;
+            }
+            ul li{
+                display: inline;
+                font-size: 20px;
+                margin: 0px 10px;
+                font-weight: 600;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .formDiv{
+                width: fit-content;
+                height: auto;
+                font-size: 17px;
+                padding: 20px 50px;
+                border: 1px solid #f0f0f0;
+                box-shadow: 10px 0px 10px #0f0f0f;
+                background-image: linear-gradient(rgba(2,0,36,1) 0%, rgba(0,212,255,1) 66%) ;
+                margin-left: 25%;
+                z-index: 5;
+            }
+           
+
+            label, input{
+                padding: 7px 15px;
+            }
+            form tr{
+                margin-bottom: 20px;
+            }
+
+            input[type="text"],input[type="email"]{
+                width: 100%;
+            }
+
+            input[type="submit"]{
+                border-radius: 20px;
+                padding: 7px 15px;
+                color: #b9690e;
+                font-size: 18px;
+                background: f0f0f0;
+            }
+
+            table tr td{
+                padding: 5px 0px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="bgImg">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="survey.html">Survey Form</a></li>
+                </ul>
+            </div>
+            <h2 style="text-align: center;">Survey Form</h2>
+            <div class="formDiv">
+                <table>
+                    <form>
+                        <tr>
+                            <td>
+                                <label for="name">Name:</label>
+                            </td>
+                            <td>
+                                <input id="name" type="text" name="name" placeholder="Full Name" pattern="[A-Za-z]" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input id="email" type="email" name="email" placeholder="Your Email address" pattern="[.+@gmail.com]" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Q. In a typical Month, how often do you visit our restaurants?</td>
+                        </tr>
+                        <tr>
+                            <td><input id="one" type="radio" name="visit"><label for="one">Visit First Time</label></td>
+                            <td><input id="two-three" type="radio" name="visit"><label for="two-three">Visit 2-3 Time</label></td>
+                            <td><input id="morethen5" type="radio" name="visit"><label for="morethen5">Visit more then 5 Time</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">You are satisfaction with:</td>
+                        </tr>
+                        <tr>
+                            <td><input id="food" type="checkbox" name="service"><label for="food">Food</label></td>
+                            <td><input id="staff" type="checkbox" name="service"><label for="staff">Staff Service</label></td>
+                            <td><input id="cleaning" type="checkbox" name="service"><label for="cleaning">Cleaning Service</label></td>
+                        </tr>
+                        <tr><td colspan="2"><label="suggestion">How can we improve our product?</label></td></tr>
+                        <tr><td colspan="3"><textarea rows="5" style="width: 100%;"></textarea></td></tr>
+                        <tr>
+                            <td><label id="rating">Give us overall Rating:</label></td>
+                            <td colspan="2">
+                                <select for='rating' style="width: 60%;padding: 7px 15px;">
+                                    <option value="5">5</option>
+                                    <option value="4">4</option>
+                                    <option value="3">3</option>
+                                    <option value="2">2</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><input style="float: right; margin: 10px 0;" type="submit" value="Submit" /></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+        </div>        
+    </body>
+</html>
+
