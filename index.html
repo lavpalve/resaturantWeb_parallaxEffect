@@ -85,6 +85,44 @@
             .AudioSec{
                 text-align: center;
             }
+            .productList{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .listItem{
+                width: 200px;
+                height: 200px;
+                border: 2px solid #f0f0f0;
+                box-shadow: 0 0 5px #0f0f0f;
+                text-align: center;
+                margin: 10px;
+            }
+            .listItem .listItemImg{
+                height: 100%;
+                width: 100%;
+            }
+            .listItemImg img{
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .listItem .listItemTitle{
+                margin: 10px auto;
+                color: #0f0f0f;
+                font-size: 20px;
+            }
+            .footer{
+                margin-top: 50px;
+                width: 100%;
+                padding: 10px 0px;
+                background-color: #0f0f0f;
+                color: #f0f0f0;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -113,14 +151,26 @@
                 <h2> Special Item </h2>
                 <div class="productList">
                     <div class="listItem">
-                        <img src="">
+                        <div class="listItemImg"><img src="Dal-Makhani.jpg"><br></div>
+                        <div class="listItemTitle"><span>Dal Makhani</span></div>
+                    </div>
+                    <div class="listItem">
+                        <div class="listItemImg"><img src="raita.jpg"><br></div>
+                        <div class="listItemTitle"><span>Spicy Raita</span></div>
+                    </div>
+                    <div class="listItem">
+                        <div class="listItemImg"><img src="biryani.jfif"><br></div>
+                        <div class="listItemTitle"><span>Veg Biryani</span></div>
+                    </div>
+                    <div class="listItem">
+                        <div class="listItemImg"><img src="Spring-Roll-5.jpg"><br></div>
+                        <div class="listItemTitle"><span>Spring Roll</span></div>
                     </div>
                 </div>
+            </div>
+            <div class="footer">
+                <span>All Copyright are reserved @ 2021</span>
             </div>
         </div>        
     </body>
 </html>
-
-<script>
-    document.getElementById('audio').play
-</script>
